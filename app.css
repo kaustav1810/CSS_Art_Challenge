@@ -10,8 +10,8 @@ div.wrapper{
 }
 
 img{
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     transition: transform filter 0.3s ease;
     z-index: 100;
   }
@@ -53,10 +53,10 @@ img{
 
   .ketchup-droplet {
     position: absolute;
-    width: 6px;
-    height: 8px;
-    top: 250px;
-    left: 40%;
+    width: 12px;
+    height: 20px;
+    top: 480px;
+    left: 45%;
     background: #a60a0a;
     border-radius: 60% 60% 60% 60% / 80% 80% 50% 50%;
     animation: fall 2.5s linear infinite;
@@ -84,8 +84,8 @@ img{
 
   .lettuce,.onion,.taco,.chicken{
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     top: 0;
     left: 10%;
     animation: fall 2.5s linear infinite;
@@ -102,12 +102,10 @@ img{
 
   }
 
-
-  .taco,.chicken{
-    width: 40px;
-    height: 40px;
+  .taco{
+    width: 80px;
+    height: 80px;
   }
-
   .taco:nth-child(even){
     left: 15%;
     animation-duration: 2s;
@@ -115,11 +113,6 @@ img{
   .taco:nth-child(odd){
     left: 85%;
     animation-duration: 2.6s;
-  }
-
-  .onion{
-    width: 30px;
-    height: 30px;
   }
 
   .onion:nth-child(even){
@@ -143,17 +136,12 @@ img{
 
   .overlay {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 35%;
     font-family: 'galada', cursive, sans-serif; /* Fancy font */
-    font-size: 20px; /* Larger font size */
-    font-weight: bold; /* Bold font */
-    letter-spacing: 0.2rem; /* Increased letter spacing */
+    font-size: 3rem; /* Larger font size */
+    letter-spacing: 0.5rem; /* Increased letter spacing */
     color: #117937; /* Fancy color */
-    opacity: 1;
-    pointer-events: none; 
-    transition: opacity 0.5s ease;
     z-index: 200;
   }
   
