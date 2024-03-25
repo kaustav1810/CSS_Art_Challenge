@@ -1,0 +1,160 @@
+body{
+  height: 100vh;
+}
+
+div.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+img{
+    width: 10rem;
+    height: 10rem;
+    transition: transform filter 0.3s ease;
+    z-index: 100;
+  }
+  
+  img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    animation: scaleandrotate 0.8s;
+    filter: brightness(1.1);
+}
+
+
+@keyframes scaleandrotate {
+    0% {
+      transform: scale(1.1) rotate(0);
+    }
+
+    20% {
+      transform: scale(1.2) rotate(30deg);
+    }
+
+    40% {
+      transform: scale(1.3) rotate(-30deg);
+    }
+   
+    60% {
+      transform: scale(1.4) rotate(30deg);
+    }
+
+    80%{
+      transform: scale(1.5) rotate(-30deg);
+    }
+
+    100%{
+      transform: scale(1.6) rotate(0);
+    }
+  }
+
+
+  .ketchup-droplet {
+    position: absolute;
+    width: 6px;
+    height: 8px;
+    top: 250px;
+    left: 40%;
+    background: #a60a0a;
+    border-radius: 60% 60% 60% 60% / 80% 80% 50% 50%;
+    animation: fall 2.5s linear infinite;
+    z-index: 9999;
+  }
+
+  .ketchup-droplet:nth-child(2) {
+    left: 45%;
+    animation-duration: 2.2s;
+  }
+  
+  .ketchup-droplet:nth-child(3) {
+    left: 43%;
+    animation-duration: 2.6s;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-20px) 
+    }
+    100% {
+      transform: translateY(100vh)
+    }
+  }
+
+  .lettuce,.onion,.taco,.chicken{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 10%;
+    animation: fall 2.5s linear infinite;
+  }
+
+  .lettuce:nth-child(odd){
+    left: 20%;
+    animation-duration: 2.2s
+  }
+
+  .lettuce:nth-child(even){
+    left: 30%;
+    animation-duration: 2.6s
+
+  }
+
+
+  .taco,.chicken{
+    width: 40px;
+    height: 40px;
+  }
+
+  .taco:nth-child(even){
+    left: 15%;
+    animation-duration: 2s;
+  }
+  .taco:nth-child(odd){
+    left: 85%;
+    animation-duration: 2.6s;
+  }
+
+  .onion{
+    width: 30px;
+    height: 30px;
+  }
+
+  .onion:nth-child(even){
+    left: 75%;
+    animation-duration: 2.2s;
+  }
+  .onion:nth-child(odd){
+    left: 95%;
+    animation-duration: 2.4s;
+  }
+
+
+  .chicken:nth-child(even){
+    left: 5%;
+    animation-duration: 2.8s;
+  }
+  .chicken:nth-child(odd){
+    left: 70%;
+    animation-duration: 1.8s;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'galada', cursive, sans-serif; /* Fancy font */
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Bold font */
+    letter-spacing: 0.2rem; /* Increased letter spacing */
+    color: #117937; /* Fancy color */
+    opacity: 1;
+    pointer-events: none; 
+    transition: opacity 0.5s ease;
+    z-index: 200;
+  }
+  
+ 
